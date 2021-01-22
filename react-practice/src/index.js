@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-// import Number from './components/number';
+import Practice from './components/practice';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <Number /> */}
+    <Practice />
   </React.StrictMode>,
   document.getElementById('root')
 );
