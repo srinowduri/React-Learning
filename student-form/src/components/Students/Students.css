@@ -1,0 +1,68 @@
+.student_Table {
+    text-align: left;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-left: -50%; 
+    width: 60%;
+    height: 40%;
+    margin-top: 60px;
+    background-color: lavender;
+    float: left;
+    position: relative;
+}
+
+
+table,td, th{
+    border: 2px solid navy;
+    height: 50px;
+}
+td{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: medium;
+}
+th{
+    text-align: center;
+    color: navy;
+    font-size: large;
+    font-weight: bold;
+    background-color: lightblue;
+}
+ h1 {
+     float: left;
+     margin-left: -50%;
+ }
+
+ .tableButton{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(23, 143, 223);
+    font-size: large;
+    font-weight: normal;
+    cursor: pointer;
+ }
+
+ /* .student_Table tr:nth-child(even){background-color: #f2f2f2;} */
+
+.student_Table tr:hover {background-color: #ddd;}
+
+.student_Table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: white;
+}
+
+.student_Table thead{
+    background-color: aquamarine;
+}
+
+.Add {
+    float: left;
+    position: relative;
+    margin-left: -60%;
+    margin-top: 30%;
+
+}
