@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`show and hide student form toggle student form 1`] = `
+<div>
+  <div>
+    <div
+      className="form"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <div>
+          <label
+            htmlFor="name"
+          >
+            Name:
+          </label>
+          <input
+            className="input"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="level"
+          >
+            Level:
+          </label>
+          <input
+            className="input"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="email"
+          >
+            Email-Id:
+          </label>
+          <input
+            className="input"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="phone"
+          >
+            Phone Number:
+          </label>
+          <input
+            className="input"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <button>
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  <h1>
+    Student List: 
+  </h1>
+  <table
+    className="student_Table"
+  >
+    <thead>
+      <tr>
+        <td>
+          Name
+        </td>
+        <td>
+          Level
+        </td>
+        <td>
+          Email-Id
+        </td>
+        <td>
+          Phone
+        </td>
+        <td>
+          Actions
+        </td>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+  <button
+    className="Add"
+    onClick={[Function]}
+    type="submit"
+  >
+    Add
+  </button>
+</div>
+`;
