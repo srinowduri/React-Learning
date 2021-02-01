@@ -96,28 +96,27 @@ class AddStudent extends Component {
             emailId: this.state.emailId,
             phoneNum: this.state.phoneNum
         }
-
+        axios.post('http://localhost:2000/api/students', studentData)
+            .then(response => {
+                console.log(JSON.stringify(response));
+            });
+   
         const studentEditedData = {
-            _id: this.state.id,
+              _id: this.state.id,
             name: this.state.name,
             level: this.state.level,
             emailId: this.state.emailId,
             phoneNum: this.state.phoneNum
         }
-            if(this.props.std){
-                console.log('student edited data: ' + JSON.stringify(studentEditedData));
-                axios.put('http://localhost:2000/api/students', studentEditedData)
-                    .then(response => {
-                        console.log(response.data);
-                    })
-            }
-            else {
-                axios.post('http://localhost:2000/api/students', studentData)
+
+        if(this.props.std){
+            console.log('student edited data: ' + JSON.stringify(studentEditedData));
+            axios.put('http://localhost:2000/api/students', studentEditedData)
                 .then(response => {
-                    console.log(JSON.stringify(response));
-                });
-            }
-    }  
+                    console.log(response.data);
+                })
+        }
+    }
     
     render(){
         return (
@@ -147,7 +146,6 @@ class AddStudent extends Component {
                         <label htmlFor="phone">Phone Number:</label>
                         <input className="input" type="text" value={this.state.phoneNum || ""} onChange={this.handlePhone}></input>
                     </div>
-
                     <button>Submit</button>
                 </form>
             </div>

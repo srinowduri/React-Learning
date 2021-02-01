@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
-import axios from 'axios';
+// import { withRouter } from 'react-router';
+
 import StudentForm from '../Add-Student/StudentForm';
 import './Students.css';
+import axios from 'axios';
 class Students extends Component {
     constructor(props) {
         super(props) 
@@ -13,7 +14,7 @@ class Students extends Component {
         }
      }
      componentDidMount() {
-        axios.get('http://localhost:2000/api/students')
+        return axios.get('http://localhost:2000/api/students')
             .then(responce =>{
                 const studentsFromDatabase = responce.data;
                 this.setState({
@@ -93,4 +94,4 @@ class Students extends Component {
     }
 }
 
-export default withRouter(Students);
+export default Students;
