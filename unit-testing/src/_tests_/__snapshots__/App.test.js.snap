@@ -1,37 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshot of Student Form testing Register button 1`] = `
-<div
-  className="App"
->
-  <header
-    className="App-header"
+exports[`Add Student should render Practice Component 1`] = `
+Array [
+  <div
+    className="App"
   >
-    <h1>
-      React Unit Testing
-    </h1>
-  </header>
-  <div>
-    <button
-      onClick={[Function]}
+    <header
+      className="App-header"
     >
-      Cancle
-    </button>
-    <div>
-      <h4>
-        Student register form 
-      </h4>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`switching button name Register and Cancel toggle the button 1`] = `
-<div>
-  <button
-    onClick={[Function]}
-  >
-    Register
-  </button>
-</div>
+      <h1>
+        React Unit Testing
+      </h1>
+      <Practice />
+    </header>
+  </div>,
+]
 `;

@@ -9,7 +9,7 @@
     padding: 0 20px;
     box-sizing: border-box;
     /* z-index: 90; */
-    color: white;
+    color: black;
 }
 
 .toolbar ul {
@@ -27,7 +27,7 @@
   
   .toolbar a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: x-large;
     font-weight: 700;
   }

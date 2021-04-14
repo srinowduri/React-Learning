@@ -1,0 +1,72 @@
+.expenses-table {
+    border-collapse: collapse;
+    border-radius: 8px;
+    width: 40%;
+    height: 40%;
+    margin-top: 60px;
+    margin-left: 2%;
+}
+
+table, td, th {
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.expenses-table tr:hover td{
+    background-color: orange;
+    color: white;
+}
+
+.expenses-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: white;
+}
+
+.expenses-table thead{
+    background-color: rgb(91, 176, 224);
+}
+
+.add {
+    float: left;
+    position: relative;
+    margin-left: 2%;
+    margin-top: -3%;
+    padding: 10px;
+    background-color: rgb(97, 30, 204);
+    font-size: large;
+    font-weight: bold;
+    font-weight: normal;
+    cursor: pointer;
+    color: white;
+    border-radius: 40% 40%;
+    /* border: none; */
+    outline: none; 
+}
+
+.edit-button{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(45, 67, 139);
+    font-size: large;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 2px;
+    color: white;
+ }
+
+ .delete-button{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(235, 6, 17);
+    font-size: large;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 2px;
+    color: white;
+ }

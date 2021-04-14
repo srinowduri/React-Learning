@@ -13,9 +13,9 @@ class Toolbar extends Component {
                     <ul>
                         <li><NavLink to="/home"> Home </NavLink></li>
                         <li><NavLink to="/students">Students</NavLink></li>
-                        <li><NavLink to="/lessons"> Lessons </NavLink></li>
+                        {/* <li><NavLink to="/lessons"> Lessons </NavLink></li>
                         <li><NavLink to="/fees"> Fees </NavLink></li>
-                        <li><NavLink to="/help"> Help </NavLink></li>
+                        <li><NavLink to="/help"> Help </NavLink></li> */}
                     </ul>
                 </nav>
             </header>
