@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AddStudentForm from '../Forms/AddStudentForm';
+// import AddStudentForm from '../../Practice';
 
 class StudentsList extends Component {
         state = {
@@ -18,7 +18,7 @@ class StudentsList extends Component {
                 <button onClick={this.showAndHide}>          
                     {this.state.isActive ? "Register" : "Cancle"}
                 </button>
-                {this.state.isActive ? null : <AddStudentForm />}
+                {/* {this.state.isActive ? null : <AddStudentForm />} */}
             </div>
         );
     }

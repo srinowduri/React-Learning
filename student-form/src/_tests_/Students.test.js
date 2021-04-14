@@ -30,15 +30,15 @@ describe('show and hide student form', () => {
         expect(getSpy).toBeCalled();
       });
 
-    // it('should fetch list of students', () => {
-    //     let component = create(<Students />);
-    //     let instance = component.getInstance();
-    //     console.log(instance.state.students);
+    it('should fetch list of students', () => {
+        let component = create(<Students />);
+        let instance = component.getInstance();
+        console.log(instance.state.students);
      
-    //     axiosMock.get.mockResolvedValueOnce({
-    //         data: {}
-    //     })
+        axiosMock.get.mockResolvedValueOnce({
+            data: {}
+        })
         
-    //     // expect(axiosMock.get).toHaveBeenCalledTimes(1);
-    // })
+        expect(axiosMock.get).toHaveBeenCalledTimes(1);
+    })
 })

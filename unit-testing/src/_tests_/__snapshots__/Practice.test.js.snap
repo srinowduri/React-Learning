@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Practice unit testing should render Practice Component 1`] = `
+Array [
+  <div>
+    <input
+      onChange={[Function]}
+      type="number"
+    />
+  </div>,
+]
+`;

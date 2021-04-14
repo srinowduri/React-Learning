@@ -14,7 +14,7 @@ class Students extends Component {
         }
      }
      componentDidMount() {
-        return axios.get('http://localhost:2000/api/students')
+        return axios.get('http://localhost:1000/api/students')
             .then(responce =>{
                 const studentsFromDatabase = responce.data;
                 this.setState({
@@ -41,7 +41,7 @@ class Students extends Component {
                  </td>
               </tr>
            )
-        })
+        });
      }
 
     switchStudentForm = () => {
@@ -53,7 +53,7 @@ class Students extends Component {
 
     toggleEditStudentForm = (id, event) => {
         event.preventDefault();
-        axios.get('http://localhost:2000/api/students/' + id)
+        axios.get('http://localhost:1000/api/students/' + id)
          .then(response => {
             const selectedStudent = response.data;
              this.setState({

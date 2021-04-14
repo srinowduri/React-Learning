@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import StudentsList from './components/Students/StudentsList';
-class App extends Component {
-  render () {
+import Practice from './Practice';
+
+function App () {
     return (
       <div className="App">
         <header className="App-header">
           <h1>React Unit Testing</h1>
+          <Practice></Practice>
         </header>
-        <StudentsList />
       </div>
     ); 
-  }
 }
 
 export default App;

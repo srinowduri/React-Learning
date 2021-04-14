@@ -96,7 +96,7 @@ class AddStudent extends Component {
             emailId: this.state.emailId,
             phoneNum: this.state.phoneNum
         }
-        axios.post('http://localhost:2000/api/students', studentData)
+        axios.post('http://localhost:1000/api/students', studentData)
             .then(response => {
                 console.log(JSON.stringify(response));
             });
@@ -111,7 +111,7 @@ class AddStudent extends Component {
 
         if(this.props.std){
             console.log('student edited data: ' + JSON.stringify(studentEditedData));
-            axios.put('http://localhost:2000/api/students', studentEditedData)
+            axios.put('http://localhost:1000/api/students', studentEditedData)
                 .then(response => {
                     console.log(response.data);
                 })

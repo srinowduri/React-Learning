@@ -1,34 +1,16 @@
 import React from 'react';
 import App from '../App';
 import { create } from 'react-test-renderer';
-import StudentsList from '../components/Students/StudentsList';
-import AddStudentForm from '../components/Forms/AddStudentForm';
+import { shallow } from 'enzyme';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
-describe('Snapshot of Student Form', () =>{
-    test('testing Register button', () => {
-        let tree = create(<App />)
-            expect(tree.toJSON()).toMatchSnapshot();
-    })
-})
+Enzyme.configure({ adapter: new Adapter() });
 
-describe('switching button name Register and Cancel', () => {
-    test('toggle the button', () =>{
-        let tree = create(<StudentsList />)
-        let instance =  tree.getInstance();
-        expect(instance.state.isActive).toBe(false)
-
-        instance.showAndHide();
-        expect(instance.state.isActive).toBe(true);
-
-        expect(tree.toJSON()).toMatchSnapshot()
-    })
-})
-
-describe('show form info', () => {
-    test('show text', () => {
-        let tree = create(<AddStudentForm />)
-        let instance = tree.getInstance();
-        // expect(instance);
-        // console.log(instance.);
+describe('Add Student', () =>{
+    it('should render Practice Component', () => {
+        let container = shallow(<App />)
+        //    console.log(container);
+        expect(container.getElements()).toMatchSnapshot();
     })
 })
